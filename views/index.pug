@@ -1,7 +1,7 @@
 extends layout
 
 block content
-  a(href=`http://localhost:${process.env.PORT || 3000}/new`): button= "New message"
+  a(href=`/new`): button= "New message"
   div
     each message in messages
       div.message
